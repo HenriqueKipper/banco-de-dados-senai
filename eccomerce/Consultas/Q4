@@ -1,0 +1,7 @@
+SELECT 
+    id,
+    nome,
+    quantidade_estoque
+FROM produtos
+WHERE quantidade_estoque < 10
+ORDER BY quantidade_estoque ASC;

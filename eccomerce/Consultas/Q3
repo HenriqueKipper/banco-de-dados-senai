@@ -1,0 +1,11 @@
+SELECT 
+    pe.id AS pedido_id,
+    c.nome AS cliente,
+    SUM(ip.quantidade * ip.preco_unitario) AS total
+FROM pedidos pe
+JOIN clientes c 
+    ON pe.cliente_id = c.id
+JOIN itens_pedido ip 
+    ON pe.id = ip.pedido_id
+GROUP BY pe.id, c.nome
+ORDER BY pe.id;

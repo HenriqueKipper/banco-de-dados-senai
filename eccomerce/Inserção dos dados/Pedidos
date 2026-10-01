@@ -1,0 +1,4 @@
+INSERT INTO pedidos (cliente_id, status) VALUES
+(1, 'Pago'),
+(2, 'Enviado'),
+(3, 'Pendente');

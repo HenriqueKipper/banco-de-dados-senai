@@ -1,0 +1,8 @@
+SELECT 
+    pe.id AS pedido_id,
+    pe.data_pedido,
+    pe.status
+FROM pedidos pe
+JOIN clientes c 
+    ON pe.cliente_id = c.id
+WHERE c.nome = 'Paulo Antunes';

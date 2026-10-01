@@ -1,0 +1,7 @@
+INSERT INTO produtos 
+(categoria_id, nome, preco, quantidade_estoque) VALUES
+(1, 'Teclado Mecânico Redragon', 249.90, 15),
+(1, 'Mouse Gamer Logitech', 179.90, 8),
+(2, 'Monitor LG UltraGear 24"', 999.90, 5),
+(3, 'Placa de Vídeo RTX 4060', 1899.90, 7),
+(3, 'Memória RAM 16GB DDR4', 329.90, 20);
